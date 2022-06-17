@@ -3,10 +3,8 @@ br\com\fintech\bankapi\repository\ContaRepository.class
 br\com\fintech\bankapi\controller\MovimentacaoController.class
 br\com\fintech\bankapi\exception\CustomException.class
 br\com\fintech\bankapi\entity\Cliente.class
-br\com\fintech\bankapi\config\SecurityConfig.class
 br\com\fintech\bankapi\entity\Cliente$ClienteBuilder.class
 br\com\fintech\bankapi\dto\MovimentacaoDTO.class
-br\com\fintech\bankapi\security\CustomAuthenticationProvider.class
 br\com\fintech\bankapi\dto\ClienteDTO.class
 br\com\fintech\bankapi\entity\Movimentacao$MovimentacaoBuilder.class
 br\com\fintech\bankapi\exception\NoDataFoundException.class

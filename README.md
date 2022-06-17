@@ -14,7 +14,7 @@ Para criar o banco de dados, execute o comando abaixo - lembrando de ajustar o c
 
 Via linha de comandos, execute a instrução abaixo:
 
-`mvn spring-boot:run`
+`mvn spring-boot:run -Dspring-boot.run.jvmArguments="-DDATABASE_URL=jdbc:mariadb://localhost:3306/bankapi -DDATABASE_USERNAME=bankapi -DDATABASE_PASSWORD=NdbM8AaMFAHXwC -DAGENCIA=0001"`
 
 Caso deseje executar pelo Intellij IDEA, basta abrir o projeto que as variáveis de ambientes já serão carregadas.
 
@@ -28,4 +28,8 @@ A documentação da API pode ser acessada pelo endereço abaixo:
 
 ## Tests
 
-`mvn test`
+Via linha de comando, execute a instrução abaixo:
+
+`mvn test -DargLine="-DDATABASE_URL=jdbc:mariadb://localhost:3306/bankapi -DDATABASE_USERNAME=bankapi -DDATABASE_PASSWORD=NdbM8AaMFAHXwC -DAGENCIA=0001"`
+
+Caso deseje executar pelo Intellij IDEA, execute a task do maven chamada `test`.
