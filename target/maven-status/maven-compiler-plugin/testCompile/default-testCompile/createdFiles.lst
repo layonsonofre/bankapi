@@ -1,0 +1,12 @@
+br\com\fintech\bankapi\service\ClienteServiceTest$1.class
+br\com\fintech\bankapi\service\ContaServiceTest$1.class
+br\com\fintech\bankapi\controller\ContaControllerTest.class
+br\com\fintech\bankapi\service\MovimentacaoServiceTest.class
+br\com\fintech\bankapi\controller\ClienteControllerTest$1.class
+br\com\fintech\bankapi\service\MovimentacaoServiceTest$1.class
+br\com\fintech\bankapi\controller\MovimentacaoControllerTest$1.class
+br\com\fintech\bankapi\controller\ClienteControllerTest.class
+br\com\fintech\bankapi\controller\ContaControllerTest$1.class
+br\com\fintech\bankapi\service\ContaServiceTest.class
+br\com\fintech\bankapi\controller\MovimentacaoControllerTest.class
+br\com\fintech\bankapi\service\ClienteServiceTest.class

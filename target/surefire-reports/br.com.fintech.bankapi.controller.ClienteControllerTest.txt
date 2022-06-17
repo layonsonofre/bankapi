@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: br.com.fintech.bankapi.controller.ClienteControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.457 s <<< FAILURE! - in br.com.fintech.bankapi.controller.ClienteControllerTest
+create  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration.taskExecutorBuilder
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/security/web/access/WebInvocationPrivilegeEvaluator
+Caused by: java.lang.ClassNotFoundException: org.springframework.security.web.access.WebInvocationPrivilegeEvaluator
+
+findAll  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration.taskExecutorBuilder
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/security/web/access/WebInvocationPrivilegeEvaluator
+Caused by: java.lang.ClassNotFoundException: org.springframework.security.web.access.WebInvocationPrivilegeEvaluator
+
+update  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration.taskExecutorBuilder
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/security/web/access/WebInvocationPrivilegeEvaluator
+Caused by: java.lang.ClassNotFoundException: org.springframework.security.web.access.WebInvocationPrivilegeEvaluator
+

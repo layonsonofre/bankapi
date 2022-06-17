@@ -1,0 +1,43 @@
+server:
+  port: 8089
+
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+      use-new-id-generator-mappings: true
+    show-sql: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        temp.use_jdbc_metadata_defaults: false
+        enable_lazy_load_no_trans: true
+        event:
+          merge:
+            entity_copy_observer: allow
+        jdbc:
+          batch_size: 1000
+        order_inserts: true
+        order_updates: true
+        generate_statistics: false
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+
+flyway:
+  defaultSchema: ${DATABASE_USERNAME}
+  url: ${DATABASE_URL}
+  username: ${DATABASE_USERNAME}
+  password: ${DATABASE_PASSWORD}
+  locations: classpath:db/migration
+
+bankapi:
+  agencia: ${AGENCIA}
+  op_deposito: 1
+  op_saque: 2
+  op_transferencia_envio: 3
+  op_transferencia_recebimento: 4
